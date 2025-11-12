@@ -292,7 +292,7 @@ if RENDER_EXTERNAL_HOSTNAME:
             url_path=TOKEN,
             webhook_url=f"https://{RENDER_EXTERNAL_HOSTNAME}/{TOKEN}"
         )
-    else:
+else:
         logger.info("Запуск в режиме polling")
         application.run_polling()
 
